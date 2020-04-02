@@ -1,3 +1,17 @@
+var card = document.getElementsByClassName('card');
+for(var i=0; i<card.length; i++) {
+  card[i].addEventListener('mouseenter', (e) => {
+    e.toElement.classList.add('shadow-lg', 'p-3', 'mb-5', 'bg-white','btn', 'rounded');
+    e.toElement.onclick=() => {
+      location.href="album.html";
+    }
+  })
+  // card[i].addEventListener('mouseover', (e) => {
+  //   e.toElement.classList.remove('shadow-lg', 'p-3', 'mb-5', 'bg-white','btn', 'rounded');
+  // })
+
+}
+
 var displayedImage = document.querySelector('.displayed-img');
 var thumbBar = document.querySelector('.thumb-bar');
 
